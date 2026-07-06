@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbitron Technologies — Software Engineering Studio</title>
+<meta name="description" content="Orbitron Technologies is a software engineering studio in Navi Mumbai building web, mobile, and data products for ambitious teams.">
+
+<!-- Favicon (inline orbit mark) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A101E'/%3E%3Cellipse cx='50' cy='50' rx='38' ry='16' fill='none' stroke='%23E7A33E' stroke-width='4' transform='rotate(-25 50 50)'/%3E%3Cellipse cx='50' cy='50' rx='38' ry='16' fill='none' stroke='%237FCFEA' stroke-width='4' transform='rotate(25 50 50)'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%23E7A33E'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="brand">
+      <span class="orbit-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><ellipse cx="50" cy="50" rx="38" ry="16" transform="rotate(-25 50 50)"/><ellipse cx="50" cy="50" rx="38" ry="16" class="ring-b" transform="rotate(25 50 50)"/><circle cx="50" cy="50" r="9" class="core"/></svg>
+      </span>
+      <span class="brand__text">ORBITRON<span class="brand__sub">TECHNOLOGIES</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link is-active">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#testimonials" class="nav__link">Testimonials</a>
+      <a href="#careers" class="nav__link">We're Hiring</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--small btn--amber nav__cta">Start a project</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== HOME / HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero__grid">
+      <div class="hero__copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Software Engineering Studio · Navi Mumbai</p>
+        <h1 class="hero__title">We put your product into a stable orbit.</h1>
+        <p class="hero__lead">Orbitron Technologies designs and builds web platforms, mobile apps, and data systems for teams who need software that keeps working long after launch day.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--amber">Start a project</a>
+          <a href="#services" class="btn btn--ghost">See what we build</a>
+        </div>
+        <dl class="hero__stats">
+          <div><dt>120+</dt><dd>Projects delivered</dd></div>
+          <div><dt>40+</dt><dd>Engineers &amp; analysts</dd></div>
+          <div><dt>15</dt><dd>Industries served</dd></div>
+          <div><dt>98%</dt><dd>Client retention</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero__visual" data-reveal>
+        <svg class="orbit-diagram" viewBox="0 0 480 480" role="img" aria-label="Diagram of Orbitron's four service areas orbiting a central core">
+          <circle class="orbit-diagram__glow" cx="240" cy="240" r="150"/>
+          <ellipse class="orbit-path" cx="240" cy="240" rx="190" ry="80" transform="rotate(-18 240 240)"/>
+          <ellipse class="orbit-path" cx="240" cy="240" rx="190" ry="80" transform="rotate(18 240 240)"/>
+          <ellipse class="orbit-path orbit-path--ice" cx="240" cy="240" rx="130" ry="130"/>
+
+          <g class="orbit-core">
+            <polygon points="240,196 279,218 279,262 240,284 201,262 201,218" class="core-hex"/>
+            <text x="240" y="246" text-anchor="middle" class="core-label">ORB</text>
+          </g>
+
+          <g class="orbit-node orbit-node--1">
+            <circle r="26"/><text text-anchor="middle" dy="5">Web</text>
+          </g>
+          <g class="orbit-node orbit-node--2">
+            <circle r="26"/><text text-anchor="middle" dy="5">App</text>
+          </g>
+          <g class="orbit-node orbit-node--3">
+            <circle r="26"/><text text-anchor="middle" dy="5">Data</text>
+          </g>
+          <g class="orbit-node orbit-node--4">
+            <circle r="26"/><text text-anchor="middle" dy="5">Cloud</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section section--dark" id="about">
+    <div class="container">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>About Orbitron</p>
+      <h2 class="section__title">Built by engineers who got tired of throwaway software.</h2>
+      <p class="section__lead">Orbitron Technologies started in 2018 as a three-person team fixing other agencies' launch-day disasters. That work taught us the lesson our name is built on: a product that isn't engineered to hold its orbit will eventually fall out of it. Today we're a team of 40+ engineers, designers, and analysts working out of Navi Mumbai with clients across fintech, healthcare, logistics, and retail.</p>
+
+      <div class="values">
+        <div class="value-card" data-reveal>
+          <span class="value-card__mark">01</span>
+          <h3>Precision</h3>
+          <p>We scope before we estimate and estimate before we commit. Fewer surprises for you, fewer late nights for us.</p>
+        </div>
+        <div class="value-card" data-reveal>
+          <span class="value-card__mark">02</span>
+          <h3>Ownership</h3>
+          <p>Every engineer on your project can explain why a decision was made — not just what was shipped.</p>
+        </div>
+        <div class="value-card" data-reveal>
+          <span class="value-card__mark">03</span>
+          <h3>Craft</h3>
+          <p>Code reviews, documentation, and tests aren't a phase at the end. They're how we work from day one.</p>
+        </div>
+        <div class="value-card" data-reveal>
+          <span class="value-card__mark">04</span>
+          <h3>Longevity</h3>
+          <p>We build for the team that inherits the codebase in three years, not just the demo next Friday.</p>
+        </div>
+      </div>
+
+      <div class="process">
+        <h3 class="process__title">How an engagement runs</h3>
+        <ol class="process__list">
+          <li><span class="process__num">01</span><div><h4>Discover</h4><p>We map the problem, the constraints, and what "done" actually means before writing a line of code.</p></div></li>
+          <li><span class="process__num">02</span><div><h4>Design</h4><p>Architecture and interface decisions get reviewed together, so the build phase has no open questions.</p></div></li>
+          <li><span class="process__num">03</span><div><h4>Build</h4><p>Weekly demos, a shared backlog, and a staging environment you can poke at from week one.</p></div></li>
+          <li><span class="process__num">04</span><div><h4>Launch &amp; hold orbit</h4><p>We stay on for monitoring, fixes, and iteration — launch is the start of the relationship, not the end.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>What we build</p>
+      <h2 class="section__title">Four disciplines, one team.</h2>
+
+      <div class="services-grid">
+        <article class="service-card" data-reveal>
+          <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="27" rx="3"/><path d="M5 16h38"/><circle cx="10" cy="12.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          <h3>Web Platforms</h3>
+          <p>Marketing sites, dashboards, and web apps built with React, Next.js, and Node — designed to stay fast as they grow.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="4" width="20" height="40" rx="4"/><path d="M14 36h20"/></svg>
+          <h3>Mobile Apps</h3>
+          <p>Native-feeling iOS and Android apps with React Native and Flutter, from prototype to app-store release.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34V22M18 34V14M28 34V26M38 34V18"/><path d="M6 34h36"/></svg>
+          <h3>Data &amp; Analytics</h3>
+          <p>Pipelines, warehouses, and dashboards that turn scattered logs into decisions someone actually trusts.</p>
+        </article>
+        <article class="service-card" data-reveal>
+          <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 34a8 8 0 1 1 1.2-15.9A10 10 0 0 1 34 20a7 7 0 0 1-1 14z"/></svg>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>CI/CD, containerized infrastructure, and monitoring on AWS or GCP so deploys stop being an event.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="section section--dark" id="testimonials">
+    <div class="container">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Client feedback</p>
+      <h2 class="section__title">What it's like to work with us.</h2>
+
+      <div class="testimonials-track">
+        <figure class="testimonial-card" data-reveal>
+          <blockquote>Orbitron rebuilt our checkout flow in six weeks and cart abandonment dropped almost immediately. They communicated like an in-house team, not a vendor.</blockquote>
+          <figcaption><span class="t-name">Ananya Rao</span><span class="t-role">VP Product, Finlace</span></figcaption>
+        </figure>
+        <figure class="testimonial-card" data-reveal>
+          <blockquote>We came to them with a shaky MVP and a launch date we thought was impossible. They hit it, and the codebase is still clean a year later.</blockquote>
+          <figcaption><span class="t-name">Marcus Webb</span><span class="t-role">Founder, RouteCrate Logistics</span></figcaption>
+        </figure>
+        <figure class="testimonial-card" data-reveal>
+          <blockquote>Their data team turned three years of spreadsheets into a dashboard our regional managers actually open every morning.</blockquote>
+          <figcaption><span class="t-name">Priya Deshmukh</span><span class="t-role">Head of Operations, Meridian Health</span></figcaption>
+        </figure>
+        <figure class="testimonial-card" data-reveal>
+          <blockquote>Straightforward estimates, no scope creep, and an engineer who could explain every architectural choice on demand. Rare combination.</blockquote>
+          <figcaption><span class="t-name">Daniel Cho</span><span class="t-role">CTO, Verdant Retail Group</span></figcaption>
+        </figure>
+        <figure class="testimonial-card" data-reveal>
+          <blockquote>The mobile app they built for us has a 4.8 rating two years in. More importantly, it barely needs our attention.</blockquote>
+          <figcaption><span class="t-name">Sara Fernandes</span><span class="t-role">Product Lead, Northbridge Insurance</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAREERS ===================== -->
+  <section class="section" id="careers">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>Join the team</p>
+      <h2 class="section__title">We're hiring.</h2>
+      <p class="section__lead">Orbitron is growing across four disciplines. We're a small enough team that your work is visible, and structured enough that you're never guessing what's expected.</p>
+
+      <div class="jobs">
+
+        <article class="job-card" data-reveal>
+          <div class="job-card__head">
+            <div>
+              <h3>Web Developer</h3>
+              <p class="job-card__meta">Navi Mumbai · Hybrid · Full-time · 2–4 yrs experience</p>
+            </div>
+            <a class="btn btn--small btn--ghost" href="mailto:help@orbitrontechnologies.com?subject=Application%20-%20Web%20Developer">Apply</a>
+          </div>
+          <p>You'll build and maintain client-facing web platforms — from marketing sites to internal dashboards — working closely with design and backend engineers.</p>
+          <div class="job-card__cols">
+            <div>
+              <h4>You'll work on</h4>
+              <ul><li>Responsive interfaces in React / Next.js</li><li>REST &amp; GraphQL integrations</li><li>Performance and accessibility passes</li><li>Component libraries shared across projects</li></ul>
+            </div>
+            <div>
+              <h4>What we're looking for</h4>
+              <ul><li>Strong HTML, CSS, and modern JavaScript</li><li>Experience with React or a similar framework</li><li>Comfort with Git-based workflows</li><li>An eye for the small UI details that get skipped</li></ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job-card" data-reveal>
+          <div class="job-card__head">
+            <div>
+              <h3>App Developer</h3>
+              <p class="job-card__meta">Navi Mumbai · Hybrid · Full-time · 2–4 yrs experience</p>
+            </div>
+            <a class="btn btn--small btn--ghost" href="mailto:help@orbitrontechnologies.com?subject=Application%20-%20App%20Developer">Apply</a>
+          </div>
+          <p>You'll ship and maintain mobile applications for clients across fintech, healthcare, and retail, from first prototype through app-store release.</p>
+          <div class="job-card__cols">
+            <div>
+              <h4>You'll work on</h4>
+              <ul><li>Cross-platform apps in React Native or Flutter</li><li>Native module integration (camera, payments, push)</li><li>App store submission and release cycles</li><li>Crash monitoring and performance tuning</li></ul>
+            </div>
+            <div>
+              <h4>What we're looking for</h4>
+              <ul><li>Shipped at least one app to Play Store or App Store</li><li>Solid grasp of mobile UI patterns and offline handling</li><li>Experience with native build tooling (Xcode / Gradle)</li><li>Comfort debugging across OS versions and devices</li></ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job-card" data-reveal>
+          <div class="job-card__head">
+            <div>
+              <h3>Python Full Stack Developer</h3>
+              <p class="job-card__meta">Navi Mumbai · Hybrid · Full-time · 3–5 yrs experience</p>
+            </div>
+            <a class="btn btn--small btn--ghost" href="mailto:help@orbitrontechnologies.com?subject=Application%20-%20Python%20Full%20Stack%20Developer">Apply</a>
+          </div>
+          <p>You'll own features end to end — from database schema to API to the interface that consumes it — on our Django and Flask-based client projects.</p>
+          <div class="job-card__cols">
+            <div>
+              <h4>You'll work on</h4>
+              <ul><li>APIs and services in Django / Flask / FastAPI</li><li>PostgreSQL schema design and query tuning</li><li>Frontend integration with React</li><li>CI pipelines and staging environments</li></ul>
+            </div>
+            <div>
+              <h4>What we're looking for</h4>
+              <ul><li>Strong Python fundamentals and one backend framework</li><li>Working knowledge of SQL and relational design</li><li>Basic frontend skills (JS, a modern framework)</li><li>Experience deploying to AWS or GCP</li></ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job-card" data-reveal>
+          <div class="job-card__head">
+            <div>
+              <h3>Data Analytics Engineer</h3>
+              <p class="job-card__meta">Navi Mumbai · Hybrid · Full-time · 2–5 yrs experience</p>
+            </div>
+            <a class="btn btn--small btn--ghost" href="mailto:help@orbitrontechnologies.com?subject=Application%20-%20Data%20Analytics%20Engineer">Apply</a>
+          </div>
+          <p>You'll turn raw, messy client data into pipelines and dashboards that the people who need them actually understand and use.</p>
+          <div class="job-card__cols">
+            <div>
+              <h4>You'll work on</h4>
+              <ul><li>ETL pipelines in Python and SQL</li><li>Dashboards in Power BI / Looker / Metabase</li><li>Data modeling for reporting layers</li><li>Ad-hoc analysis for client stakeholders</li></ul>
+            </div>
+            <div>
+              <h4>What we're looking for</h4>
+              <ul><li>Strong SQL and comfort with a scripting language (Python)</li><li>Experience with at least one BI tool</li><li>Understanding of data warehousing concepts</li><li>Ability to explain findings to non-technical stakeholders</li></ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section--dark" id="contact">
+    <div class="container">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__dot"></span>Get in touch</p>
+      <h2 class="section__title">Tell us what you're building.</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <div class="contact-info__block">
+            <h3>Email</h3>
+            <a href="mailto:help@orbitrontechnologies.com">help@orbitrontechnologies.com</a>
+          </div>
+          <div class="contact-info__block">
+            <h3>Office</h3>
+            <address>
+              Plot No. R-217, TTC Industrial Area,<br>
+              Rabale MIDC, Rabale,<br>
+              Navi Mumbai, Maharashtra 400701,<br>
+              India
+            </address>
+          </div>
+          <div class="contact-info__block">
+            <h3>Hours</h3>
+            <p>Monday–Friday, 9:30 AM – 6:30 PM IST</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-reveal>
+          <div class="form-row">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="e.g. New project inquiry" required>
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--amber btn--full">Send message</button>
+          <p class="form-note" id="formNote">This opens your email app with the message pre-filled to help@orbitrontechnologies.com.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="brand brand--footer">
+      <span class="orbit-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><ellipse cx="50" cy="50" rx="38" ry="16" transform="rotate(-25 50 50)"/><ellipse cx="50" cy="50" rx="38" ry="16" class="ring-b" transform="rotate(25 50 50)"/><circle cx="50" cy="50" r="9" class="core"/></svg>
+      </span>
+      <span class="brand__text">ORBITRON<span class="brand__sub">TECHNOLOGIES</span></span>
+    </a>
+
+    <nav class="footer__links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="footer__address">Plot No. R-217, TTC Industrial Area, Rabale MIDC, Rabale, Navi Mumbai, Maharashtra 400701, India</p>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Orbitron Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
